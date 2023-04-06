@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+</head>
+
+
+<body>
+    <div class="welcome">
+        <div class="n1">这里可以换肤噢！<span class="this"></span><span class="next1 bb"></span></div>
+        <div class="n2">搜索和记录在这里！<span class="this"></span><span class="next1 bb"></span></div>
+        <div class="n3">这里可以看添加记录！<span class="this"></span><span class="next1 bb"></span></div>
+    </div>
+    <nav>
+        <div class="wid">
+            <div class="form" id="form1">
+                <h1>Welcome!</h1>
+            </div>
+            <div class="form" id="form2">
+                <h1>Change BackGround</h1>
+                <div class="pic">
+                    <span class="pic1 picture" data-u="0"><img src="1.jpg">
+                    </span>
+                    <span class="pic2 picture" data-u="1"><img src="nav.jpg"></span>
+                    <span class="pic3 picture" data-u="2"><img src="0.png"></span>
+                </div>
+            </div>
+            <div class="form" id="form3">
+                <h1>Searching & History</h1>
+                <div class="search">
+                    <input type="text" maxlength="10" id="searching" placeholder="搜索备注">
+                </div>
+                <!-- 以下是已创建账本 -->
+                <div class="boxes">
+                    <div class="empty">—— 空空如也 ——</div>
+                    <div class="def">—— 没有找到记录噢 ——</div>
+                    <!-- 导航栏历史记录 -->
+                </div>
+            </div>
+        </div>
+        <div class="blur">
+            <div class="table">
+                <div id="btn1"></div>
+                <div id="btn2"></div>
+                <div id="btn4"></div>
+                <div class="btn3" style="font-size: 25px;"></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="add">
+        <div class="table">
+            <span class="goback"></span>
+            <h1>Add Record</h1>
+            <div class="list">
+                <div class="neir">
+                    <p>Year</p>
+                    <input type="text" id="n1" maxlength="4" class="shuru">
+                </div>
+                <div class="neir">
+                    <p>Month</p>
+                    <input type="text" id="n2" maxlength="2" class="shuru">
+                </div>
+                <div class="neir">
+                    <p>Day</p>
+                    <input type="text" id="n3" maxlength="2" class="shuru">
+                </div>
+                <div class="neir">
+                    <p>Amount</p>
+                    <div>
+                        <span id="in" style="background-color: rgb(58, 125, 193);">In</span>
+                        <span id="out">Out</span>
+                    </div>
+                    <input type="text" id="n4" maxlength="10" class="shuru">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <p>Remark</p>
+                    <input type="text" id="n5" maxlength="10" class="shuru">
+                </div>
+                <div class="submit">
+                    <span class="succes"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <time>
+        <div class="clock">
+            <ul>
+                <li class="time1">2</li>
+                <li class="time2">4</li>
+                <li class="time3">0</li>
+                <li class="time4">0</li>
+                <div>
+                    <span id="up"></span>
+                    <span id="down"></span>
+                </div>
+            </ul>
+        </div>
+    </time>
+
+    <div class="add check" id="check">
+        <div class="table">
+            <span class="goback"></span>
+            <h1>Record</h1>
+            <div class="list">
+                <div class="neir">
+                    <p>Remark</p>
+                    <p id="a5" class="hide"></p>
+                    <input type="text" id="c1" maxlength="10" class="shuru1">
+                </div>
+                <div class="neir">
+                    <p>Year</p>
+                    <p id="a1" class="hide"></p>
+                    <input type="text" id="c2" maxlength="4" class="shuru1">
+                </div>
+                <div class="neir">
+                    <p>Month</p>
+                    <p id="a2" class="hide"></p>
+                    <input type="text" id="c3" maxlength="2" class="shuru1">
+                </div>
+                <div class="neir">
+                    <p>Day</p>
+                    <p id="a3" class="hide"></p>
+                    <input type="text" id="c4" maxlength="2" class="shuru1">
+                </div>
+                <div class="neir">
+                    <p>Amount</p>
+                    <div>
+                        <span id="in1" style="background-color: rgb(58, 125, 193);">In</span>
+                        <span id="out1">Out</span>
+                    </div>
+                    <p id="a4" class="hide"></p>
+                    <input type="text" id="c5" maxlength="10" class="shuru1">
+                </div>
+            </div>
+            <div class="edit">
+                <div class="mid">
+                    <span class="editor"></span>
+                    <span class="sub"></span>
+                    <span class="delete"></span>
+                </div>
+            </div>
+            <div class="creattime">2021/9/29 22:53</div>
+        </div>
+    </div>
+</body>
+
+</html>
